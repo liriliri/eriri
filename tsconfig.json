@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {},
+    "fileGlobs": [
+        "./src/**/*.ts"
+    ]
+}
