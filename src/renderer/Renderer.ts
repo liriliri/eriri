@@ -1,13 +1,12 @@
-module eriri 
+import FilterManager from './manager/FilterManager.ts'
+
+export default class Renderer
 {
-    export class Renderer 
+    constructor(width:number, height:number, options:Object)
     {
-        constructor(width:number, height:number, options:Object) 
-        {
-            options = options || {};
-            
-            this.filterManager = new FilterManager();
-        }
-        filterManager:FilterManager;
+        options = options || {};
+
+        this.filterManager = new FilterManager();
     }
+    filterManager:FilterManager;
 }

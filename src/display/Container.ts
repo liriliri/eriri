@@ -1,7 +1,4 @@
-module eriri 
+export default class Container
 {
-    export class Container 
-    {
-        constructor() {}   
-    }    
+    constructor() {}
 }

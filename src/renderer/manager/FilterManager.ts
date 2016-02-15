@@ -1,10 +1,7 @@
-module eriri 
+export default class FilterManager
 {
-    export class FilterManager 
+    constructor()
     {
-        constructor() 
-        {
-            
-        }
+
     }
 }
