@@ -1,9 +1,9 @@
 var typescript = require('rollup-plugin-typescript');
 
 module.exports = {
-    entry: './src/eriri.ts',
-    dest: './dist/eriri.js',
+    entry: 'src/eriri.ts',
     format: 'iife',
     moduleName: 'eriri',
+    dest: 'dist',
     plugins: [typescript()]
 };

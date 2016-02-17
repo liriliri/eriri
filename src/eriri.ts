@@ -1,7 +1,9 @@
-import Renderer from './renderer/Renderer.ts'
-import Container from './display/Container.ts'
+import Renderer from './renderer/Renderer'
+import Container from './display/Container'
+import Point from './math/Point'
 
 export default {
     Renderer: Renderer,
-    Container: Container
+    Container: Container,
+    Point: Point
 };

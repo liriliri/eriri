@@ -1,13 +1,20 @@
-import FilterManager from './manager/FilterManager.ts'
+import Container from "../display/Container";
 
 export default class Renderer
 {
-    filterManager:FilterManager;
-    constructor(width:number, height:number, options:Object)
+    width:number;
+    height:number;
+    view:HTMLCanvasElement;
+    gl:WebGLRenderingContext;
+    constructor(width:number = 800, height:number = 600, options:any = {})
     {
-        options = options || {};
-
-        this.filterManager = new FilterManager();
+        this.width = width;
+        this.height = height;
+        this.view = options.view || document.createElement('canvas');
+        this.gl = <WebGLRenderingContext>this.view.getContext('webgl');
     }
-    render() {}
+    render(scene:Container)
+    {
+        scene.render(this);
+    }
 }

@@ -6,9 +6,7 @@
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/liriliri/eriri.git"
@@ -25,6 +23,15 @@
   },
   "homepage": "https://github.com/liriliri/eriri#readme",
   "devDependencies": {
-    "rollup-plugin-typescript": "^0.5.0"
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rollup": "^1.7.0",
+    "require-dir": "^0.3.0",
+    "rollup-plugin-typescript": "^0.5.0",
+    "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "rollup": "^0.25.4"
   }
 }

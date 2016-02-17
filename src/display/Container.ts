@@ -1,4 +1,9 @@
-export default class Container
+import DisplayObject from "./DisplayObject";
+
+export default class Container extends DisplayObject
 {
-    constructor() {}
+    constructor()
+    {
+        super();
+    }
 }
