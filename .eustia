@@ -1,7 +1,0 @@
-module.exports = {
-    util: {
-        files: 'src/**/*.ts',
-        pattern: 'commonjs',
-        output: 'src/lib/util.js'
-    }
-};
